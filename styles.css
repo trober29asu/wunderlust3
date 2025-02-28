@@ -1,0 +1,1018 @@
+/* Tania Roberts */
+
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+
+/* ---------- START OF CSS RESET ---------- */
+/* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ---------- END OF CSS RESET ---------- */
+
+
+/* ----- START OF GLOBAL CSS FOR ENTIRE HTML DOCUMENT ----- */
+:root {
+    --black: #000000;
+    --blue: #499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --purple: #9B26B0;
+    --teal: #55BCD5;
+    --white: #FFFFFF;
+    --yellow: #F6D64A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: linear-gradient(to bottom, var(--teal) 1%, var(--white) 6%);
+    overflow-x: hidden;
+}
+
+/* ----- END OF GLOBAL CSS FOR ENTIRE HTML DOCUMENT ----- */
+
+
+/* ----- START OF CSS FOR SKIP LINK AND SR ONLY IN HTML DOCUMENT ----- */
+#skip {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+#skip :focus {
+    height: auto;
+    position: static;
+    width: auto;
+}
+
+.sr-only {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+/* ----- END OF CSS FOR SKIP LINK AND SR ONLY IN HTML DOCUMENT ----- */
+
+
+/* ----- START OF CSS FOR HEADER AREA IN HTML DOCUMENT ----- */
+h1,
+h2,
+h3 {
+    font-family: "Molle", serif;
+}
+
+h4,
+p,
+q,
+a,
+small,
+nav,
+button,
+form {
+    font-family: "Montserrat", serif;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-top: 30px;
+    padding-left: 40px;
+}
+
+header p {
+    font-size: 22px;
+    line-height: 1.8;
+    padding-left: 40px;
+    width: 86%;
+}
+
+#logo img {
+    height: 80px;
+    margin-top: 20px;
+}
+
+#menu-toggle label {
+    background-color: var(--yellow);
+    color: var(--black);
+    font-weight: 550;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 40px;
+    width: 200px;
+}
+
+#menu-toggle input:checked ~ label {
+    background: var(--black);
+    color: var(--white);
+    width: 100%;
+}
+
+#menu-toggle input:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+}
+
+#menu-toggle ul {
+    right: 0;
+    position: absolute;
+    text-align: center;
+    top: -400px;
+    width: 100%;
+}
+
+#menu-toggle a {
+    background-color: var(--teal);
+    border: 1px solid var(--black);
+    color: var(--black);
+    display: block;
+    font-weight: 550;
+    padding: 38px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#menu-toggle a:hover {
+    color: var(--white);
+}
+
+#toggle {
+    display: none;
+}
+
+/* ----- END OF CSS FOR HEADER AREA IN HTML DOCUMENT ----- */
+
+
+/* ----- START OF CSS FOR INTRO AREA IN HTML DOCUMENT ----- */
+#intro {
+    display: flex;
+    flex-direction: column;
+}
+
+#intro img {
+    height: auto;
+    padding-bottom: 8px;
+    width: 100%;
+}
+
+#intro picture {
+    width: 100%;
+}
+
+#intro h2 {
+    font-size: 45px;
+    margin-top: 60px;
+    padding-left: 40px;
+}
+
+#intro p {
+    line-height: 1.9;
+    padding: 10px 40px 15px 40px;
+    width: 95%;
+}
+
+/* ----- END OF CSS FOR INTRO AREA IN HTML DOCUMENT ----- */
+
+
+/* ----- START OF CSS FOR PLAN AREA IN HTML DOCUMENT ----- */
+#plan {
+    align-items: center;
+    background-color: var(--yellow);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+#plan section {
+    background-color: var(--teal);
+    border-radius: 10px;
+    border: 2px solid var(--white);
+    margin-top: 5px;
+    padding: 15px 50px 15px 50px;
+    text-align: center;
+    width: 100%;
+}
+
+#plan section img {
+    padding: 20px;
+}
+
+#plan h3 {
+    align-self: flex-start;
+    font-size: 40px;
+    margin-left: 40px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+#plan h4 {
+    font-size: 25px;
+    font-weight: 610;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+/* ----- END OF CSS FOR PLAN AREA IN HTML DOCUMENT ----- */
+
+
+/* ----- START OF CSS FOR TESTIMONIALS AREA IN HTML DOCUMENT ----- */
+#testimonials section {
+    padding-bottom: 30px;
+}
+
+#testimonials div {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 65%;
+}
+
+#testimonials h3 {
+    align-self: flex-start;
+    font-size: 40px;
+    margin-left: 45px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+#testimonials h4 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#testimonials p {
+    font-size: 20px;
+}
+
+#testimonials q {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1;
+}
+
+#testimonials q:before {
+    content: '"';
+}
+
+#testimonials q:after {
+    content: '"';
+}
+
+/* ----- END OF CSS FOR TESTIMONIALS AREA IN HTML DOCUMENT ----- */
+
+
+/* ----- START OF CSS FOR ABOUT AREA IN HTML DOCUMENT ----- */
+#about {
+    background-color: var(--blue);
+    line-height: 1.4;
+    text-align: center;
+}
+
+#about section {
+    padding-bottom: 30px;
+    width: 50%;
+}
+
+#about div {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 70%;
+}
+
+#about img {
+    height: 135px;
+    width: 135px;
+}
+
+#about h3 {
+    font-size: 40px;
+    text-align: start;
+    margin-left: 45px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+#about h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#about p {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+/* ----- END OF CSS FOR ABOUT AREA IN HTML DOCUMENT ----- */
+
+
+/* ----- START OF CSS FOR CONTACT FORM AREA IN HTML DOCUMENT ----- */
+#contact {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#contact label {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#contact fieldset {
+    padding-bottom: 15px;
+}
+
+#contact legend {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#contact h3 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+#names input[type="text"] {
+    border: 3px solid var(--purple);
+    color: var(--black);
+    font-size: 20px;
+    height: 60px;
+    margin-bottom: 22px;
+    padding: 6px;
+    width: 100%;
+}
+
+#nums input[type="email"] {
+    border: 3px solid var(--purple);
+    color: var(--black);
+    font-size: 20px;
+    height: 60px;
+    margin-bottom: 22px;
+    padding: 6px;
+    width: 100%;
+}
+
+#nums input[type="tel"] {
+    border: 3px solid var(--purple);
+    color: var(--black);
+    font-size: 20px;
+    height: 60px;
+    margin-bottom: 22px;
+    padding: 6px;
+    width: 100%;
+}
+
+#nums input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 3px solid var(--purple);
+    border-radius: 50%;
+    display: grid;
+    height: 60px;
+    margin-bottom: 5px;
+    place-content: center;
+    width: 60px;
+}
+
+#nums input[type="radio"]:checked::before {
+    background-color: var(--purple);
+    border-radius: 50%;
+    content: "";
+    height: 38px;
+    width: 38px;
+}
+
+#selects input[type="submit"] {
+    background-color: #9b26b0;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.custom-select select {
+    border: 3px solid var(--purple);
+    color: var(--black);
+    font-size: 20px;
+    height: 60px;
+    margin-bottom: 22px;
+    padding: 6px;
+    width: 100%;
+}
+
+.form-required {
+    font-family: "Montserrat";
+    font-size: 19px;
+    font-style: italic;
+    padding-left: 2px;
+}
+
+.required {
+    color: var(--purple);
+    font-size: 19px;
+    padding-left: 4px;
+}
+
+.radio-label {
+    font-weight: normal;
+    padding-left: 2px;
+    text-transform: none;
+}
+
+/* ----- END OF CSS FOR CONTACT FORM AREA IN HTML DOCUMENT ----- */
+
+
+/* ----- START OF CSS FOR FOOTER AREA IN HTML DOCUMENT ----- */
+footer {
+    background-color: var(--light-gray);
+    display: grid;
+    padding-top: 15px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: var(--black);
+    font-size: 14px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+/* ----- END OF CSS FOR FOOTER AREA IN HTML DOCUMENT ----- */
+
+
+/* ----- START OF CSS FOR MEDIUM SCREEN SIZE DEVICES ----- */
+@media only screen and (min-width: 768px) {
+
+    /* ----- START OF CSS FOR HEADER AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+    body {
+        background: linear-gradient(to bottom, var(--teal) 1%, var(--white) 9%);
+    }
+
+    header {
+        display: grid;
+        grid-template-areas: "header title" "header paragraph";
+        grid-template-columns: 28% auto;
+        grid-template-rows: 45% auto;
+        margin-top: 50px;
+        position: relative;
+    }
+
+    header h1 {
+        font-size: 50px;
+        grid-area: title;
+        margin: 0;
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+
+    header p {
+        grid-area: paragraph;
+        line-height: 1.4;
+    }
+
+    #logo img {
+        height: auto;
+        grid-area: header;
+        width: 252px;
+    }
+
+    #logo a {
+        height: auto;
+        grid-area: header;
+        width: 252px;
+    }
+
+    #menu-toggle label {
+        height: 1px;
+        left: -10000px;
+        overflow: hidden;
+        top: auto;
+    }
+
+    #menu-toggle input {
+        height: 1px;
+        left: -10000px;
+        margin: 0 auto;
+        overflow: hidden;
+        top: auto;
+    }
+
+    #menu-toggle ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        top: 172px;
+    }
+
+    #menu-toggle li {
+        padding: 5px;
+    }
+
+    #menu-toggle a {
+        background-color: var(--white);
+        border: none;
+        padding: 13px;
+    }
+
+    #menu-toggle a:hover {
+        background-color: var(--yellow);
+    }
+
+    #menu-toggle .active > a {
+        background-color: var(--yellow);
+    }
+
+    /* ----- END OF CSS FOR HEADER AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+
+
+    /* ----- START OF CSS FOR INTRO AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+    #intro {
+        padding: 45px 45px 10px 45px;
+    }
+
+    #intro p {
+        width: 100%;
+    }
+
+    #img-grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        padding: 0px 35px 0px 35px;
+    }
+
+    #img-grid img:first-child {
+        order: 2;
+    }
+
+    #img-grid picture {
+        grid-column: 1 / span 2;
+        grid-row: 2 / 3;
+    }
+
+    /* ----- END OF CSS FOR INTRO AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+
+
+    /* ----- START OF CSS FOR PLAN AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+    #plan section {
+        height: 260px;
+        padding: 8px;
+        width: 295px;
+    }
+
+    #plan section img {
+        height: auto;
+        padding: 12px;
+        width: 170px;
+    }
+
+    #plan section:nth-child(2) img {
+        height: auto;
+        padding-top: 38px;
+        width: 215px;
+    }
+
+    #plan div {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    #plan h3 {
+        align-self: flex-start;
+        margin-left: 80px;
+    }
+
+    #plan h4 {
+        font-size: 21px;
+    }
+
+    /* ----- END OF CSS FOR PLAN AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+
+
+    /* ----- START OF CSS FOR TESTIMONIALS AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+    #testimonials div {
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        line-height: 1;
+        width: 80%;
+    }
+
+    #testimonials h3 {
+        margin-left: 80px;
+    }
+
+    /* ----- END OF CSS FOR TESTIMONIALS AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+
+
+    /* ----- START OF CSS FOR ABOUT AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+    #about div {
+        flex-flow: row nowrap;
+    }
+
+    #about section img {
+        height: 105px;
+        width: 105px;
+    }
+
+    #about h3 {
+        margin-left: 90px;
+        width: 100%;
+    }
+
+    /* ----- END OF CSS FOR ABOUT AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+
+
+    /* ----- START OF CSS FOR CONTACT FORM AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+    #contact label {
+        grid-column: 1 / 3;
+    }
+
+    #contact fieldset {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #contact legend {
+        grid-column: 1 / 2;
+    }
+
+    #contact .custom-select {
+        grid-column: 1 / 3;
+    }
+
+    #selects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #selects input[type="submit"] {
+        grid-column: 2 / 3;
+    }
+
+    /* ----- END OF CSS FOR CONTACT FORM AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+
+
+    /* ----- START OF CSS FOR FOOTER AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+    footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    footer p {
+        padding-top: 10px;
+    }
+
+    footer a {
+        text-align: justify;
+    }
+
+    /* ----- END OF CSS FOR FOOTER AREA ON MEDIUM SCREEN SIZE DEVICES ----- */
+}
+
+/* ----- END OF CSS FOR MEDIUM SCREEN SIZE DEVICES ----- */
+
+
+/* ----- START OF CSS FOR LARGE SCREEN SIZE DEVICES ----- */
+@media only screen and (min-width: 1200px) {
+
+    /* ----- START OF CSS FOR HEADER AREA ON LARGE SCREEN SIZE DEVICES ----- */
+    header {
+        grid-template-columns: 13% auto;
+        grid-template-rows: 65% auto;
+    }
+
+    header h1 {
+        margin-top: 5px;
+    }
+
+    header p {
+        font-size: 20px;
+        line-height: inherit;
+    }
+
+    #logo img {
+        margin: 0;
+    }
+
+    #menu-toggle ul {
+        display: flex;
+        justify-content: flex-end;
+        top: -60px;
+    }
+
+    /* ----- END OF CSS FOR HEADER AREA ON LARGE SCREEN SIZE DEVICES ----- */
+
+
+    /* ----- START OF CSS FOR INTRO AREA ON LARGE SCREEN SIZE DEVICES ----- */
+    #intro {
+        display: grid;
+        grid-template-rows: 10% auto;
+        grid-template-areas: "intro images" "paragraph images";
+        padding: 150px 50px 60px 55px;
+    }
+
+    #intro h2 {
+        grid-area: intro;
+        margin: 0;
+    }
+
+    #intro p {
+        grid-area: paragraph;
+    }
+
+    #img-grid {
+        grid-area: images;
+    }
+
+    /* ----- END OF CSS FOR INTRO AREA ON LARGE SCREEN SIZE DEVICES ----- */
+
+
+    /* ----- START OF CSS FOR PLAN AREA ON LARGE SCREEN SIZE DEVICES ----- */
+    #plan {
+        height: 450px;
+    }
+
+    #plan div {
+        display: flex;
+    }
+
+    #plan h3 {
+        align-self: flex-start;
+        margin-left: 95px;
+    }
+
+    /* ----- END OF CSS FOR PLAN AREA ON LARGE SCREEN SIZE DEVICES ----- */
+
+
+    /* ----- START OF CSS FOR TESTIMONIALS AREA ON LARGE SCREEN SIZE DEVICES ----- */
+    #testimonials {
+        height: 560px;
+        padding-top: 40px;
+    }
+
+    #testimonials div {
+        display: grid;
+        gap: 100px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #testimonials img {
+        padding-bottom: 15px;
+        width: 180px;
+    }
+
+    #testimonials h3 {
+        align-self: flex-start;
+        margin-left: 100px;
+    }
+
+    #testimonials h4 {
+        font-size: 20px;
+    }
+
+    #testimonials p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    #testimonials q {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    /* ----- END OF CSS FOR TESTIMONIALS AREA ON LARGE SCREEN SIZE DEVICES ----- */
+
+
+    /* ----- START OF CSS FOR ABOUT AREA ON LARGE SCREEN SIZE DEVICES ----- */
+    #about {
+        height: 420px;
+        padding-top: 50px;
+    }
+
+    #about div {
+        padding: 0% 8% 0% 8%;
+    }
+
+    #about h3 {
+        align-self: flex-start;
+        margin-left: 145px;
+    }
+
+    /* ----- END OF CSS FOR ABOUT AREA ON LARGE SCREEN SIZE DEVICES ----- */
+
+
+    /* ----- START OF CSS FOR CONTACT FORM AREA ON LARGE SCREEN SIZE DEVICES ----- */
+    #contact {
+        padding-bottom: 60px;
+        padding-top: 40px;
+    }
+
+    #contact form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "names nums selects";
+        gap: 10px;
+    }
+
+    #contact fieldset {
+        justify-content: space-between;
+    }
+
+    #names {
+        grid-area: names;
+    }
+
+    #nums {
+        grid-area: nums;
+    }
+
+    #selects {
+        grid-area: selects;
+    }
+
+    /* ----- END OF CSS FOR CONTACT FORM AREA ON LARGE SCREEN SIZE DEVICES ----- */
+
+
+    /* ----- START OF CSS FOR FOOTER AREA ON LARGE SCREEN SIZE DEVICES ----- */
+    footer {
+        display: flex;
+        padding-top: 10px;
+        text-align: justify;
+    }
+
+    footer p {
+        flex-grow: 1;
+        margin-left: 140px;
+    }
+
+    footer a {
+        margin-right: 140px;
+    }
+
+    /* ----- END OF CSS FOR FOOTER AREA ON LARGE SCREEN SIZE DEVICES ----- */
+}
+
+/* ----- END OF CSS FOR LARGE SCREEN SIZE DEVICES ----- */
